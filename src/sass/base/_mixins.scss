@@ -13,3 +13,18 @@
         left: 0px;
     }
 }
+@mixin before_circle_yellow_2{
+    &:before{
+        content: '';
+        position: absolute;
+        
+        border-radius: 100%;
+        width: 36px;
+        height: 36px;
+        background-color: $main-color;
+
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+    }
+}
