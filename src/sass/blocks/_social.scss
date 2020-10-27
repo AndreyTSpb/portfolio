@@ -1,0 +1,39 @@
+.social{
+    position: fixed;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: inherit;
+    z-index: 3;
+    top: 200px;
+    left: 40px;
+    &__link{
+        cursor: pointer;
+        img{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 20px;
+            &:hover{
+                width: 25px;
+                margin-top: 2px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    &__divider{
+        width: 2px;
+        height: 100px;
+        background-color: #000000;
+    }
+    &__text{
+        height: 200px;
+        width: 25px;
+        span{
+            display: block;
+            transform: rotate(-90deg) translate(-30px, -88px);
+            width: 200px;
+        }
+    }
+}

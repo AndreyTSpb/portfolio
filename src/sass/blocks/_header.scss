@@ -1,0 +1,23 @@
+.header{
+    min-height: 100vh;
+    position: relative;
+    background-image: url('../img/header_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%/cover;
+    padding-top: 205px;
+    padding-left: 150px;
+    &__subtitle{
+        padding-left: 10px;
+        z-index: 2;
+        position: relative;
+        @include before_circle_yellow;
+    }
+    &__title{
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__btn{
+        margin-top: 25px;
+    }
+}

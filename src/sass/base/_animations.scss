@@ -1,0 +1,34 @@
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    to{
+       transform: scalerotate(360deg);
+    }
+}
+
+@keyframes showBlockMenu {
+   from {
+      left: -345px;
+    }
+    50%{
+      left: -172px;
+    }
+    to {
+      left: 0;
+    }
+}
+@keyframes hideBlockMenu {
+  from {
+     left: 0;
+   }
+   50%{
+     left: -172px;
+   }
+   to {
+     left: -345px;
+   }
+}
