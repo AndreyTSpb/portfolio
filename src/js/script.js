@@ -25,6 +25,7 @@ if(hamburger !== null){
             menu.style.display = 'block';
             hamburger.style.display = 'none';
             block_menu.classList.add('menu__block-show');
+
             let close = menu.querySelector('.menu__close');
             if(close !== null){
                 close.addEventListener('click', ()=>{
@@ -43,7 +44,7 @@ if(hamburger !== null){
                     setTimeout(function(){
                         menu.style.display = 'none';
                         block_menu.classList.remove('menu__block-hide');
-                    }, 999);
+                    }, 500);
                 });
             }
         }

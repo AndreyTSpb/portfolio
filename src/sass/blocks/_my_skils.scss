@@ -27,10 +27,13 @@
             justify-content: start;
             align-items: start;
             padding: 25px;
-            img{
-                width: 46px;
+            &-img{
                 height: 65px;
+                justify-self: center;
             }
+            // img{
+            //     height: 65px;
+            // }
             h6{
                 margin-top: 15px;
             }

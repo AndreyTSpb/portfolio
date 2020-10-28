@@ -44,7 +44,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 30px 30px 30px 30px;
-        transition-duration: 1s;
+        transition-duration: .5s;
         ul{
             list-style: none;
             margin-left: 15px;
@@ -64,6 +64,13 @@
                     border: 2px solid #000000;
                     border-radius: 100%;
                     box-sizing: border-box;
+                    transition: all 0.6s;
+                }
+                &:hover{
+                    &:before{
+                        background-color: #ffffff;
+                        border: 2px solid #ffffff;
+                    }
                 }
                 a{
                     color: #ffffff;
@@ -74,14 +81,14 @@
         &-show{
             //left: 0px;
             animation-name: showBlockMenu;
-            animation-duration: 1s;
+            animation-duration: .5s;
             animation-timing-function: linear;
             animation-iteration-count: 1;
         }
         &-hide{
             //left: 0px;
             animation-name: hideBlockMenu;
-            animation-duration: 1s;
+            animation-duration: .5s;
             animation-timing-function: linear;
             animation-iteration-count: 1;
         }
