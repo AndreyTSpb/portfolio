@@ -1,13 +1,15 @@
+@mixin circle_yellow {
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    background-color: $main-color;
+}
+
 @mixin before_circle_yellow{
     &:before{
         content: '';
         position: absolute;
-        
-        border-radius: 100%;
-        width: 36px;
-        height: 36px;
-        background-color: $main-color;
-
+        @include circle_yellow;
         z-index: -1;
         top: -25%;
         left: 0px;
@@ -17,14 +19,27 @@
     &:before{
         content: '';
         position: absolute;
-        
-        border-radius: 100%;
-        width: 36px;
-        height: 36px;
-        background-color: $main-color;
-
+        @include circle_yellow;
         z-index: -1;
         top: 0px;
         left: 0px;
     }
+}
+
+@mixin before_circle_yellow_center {
+    &:before{
+        content: '';
+        position: absolute;
+        @include circle_yellow;
+        z-index: -1;
+        top: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@mixin divider{
+    width: 60px;
+    height: 0px;
+    border: 3px solid $main-color;
 }
