@@ -51,21 +51,55 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+    /**
+     * Функция проверки находится ли элемент в зоне видомости
+     */
+    function isVisible(elem) {
+
+        let coords = elem.getBoundingClientRect();
+      
+        let windowHeight = document.documentElement.clientHeight;
+      
+        // верхний край элемента виден?
+        let topVisible = coords.top > 0 && coords.top < windowHeight;
+      
+        // нижний край элемента виден?
+        let bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
+      
+        return topVisible || bottomVisible;
+    }
 
     /**
-     * Прогресс бары
-     * 1) находим все прогресс-бары
-     * 2) отправляем найденный массив на перебор 
-     * 3) у каждого элемента находим атрибут data-progres
-     * 4) прибавляем по 1 к style.widht progres-bar с задержкой(задержка в css)
+     * ПРАГРЕСС БАРЫ
      */
-    let progress_bars = document.querySelectorAll(".progres-bar");
-    if(progress_bars.length > 0){
-        for(let i = 0; i< progress_bars.length; i++){
-            let progres = progress_bars[i];
-            if(progres.hasAttribute('data-progres')){
-                progres.style.width = progres.getAttribute('data-progres')+"%";
+    /**
+     * Срабатывание скрипта при прокрутки для нужного места на странице
+     */
+    window.addEventListener('scroll', showProgressBars);
+
+    function showProgressBars() {
+        /**
+         * Прогресс бары
+         * 1) находим все прогресс-бары
+         * 2) отправляем найденный массив на перебор 
+         * 3) у каждого элемента находим атрибут data-progres
+         * 4) прибавляем по 1 к style.widht progres-bar с задержкой(задержка в css)
+         */
+        let progress_bars = document.querySelectorAll(".progres-bar");
+        if(progress_bars.length > 0){
+            for(let i = 0; i< progress_bars.length; i++){
+                let progres = progress_bars[i];
+                if(progres.hasAttribute('data-progres')){
+                    /**
+                     * Проверка попал ли в зону видимости
+                     */
+                    if(isVisible(progres)){
+                        progres.style.width = progres.getAttribute('data-progres')+"%";
+                    }
+                }
             }
         }
-    }
+      }
+
 }, false);
