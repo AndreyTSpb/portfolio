@@ -24,8 +24,8 @@
             border: 1px solid #100F0D;
             display: flex;
             flex-direction: column;
-            justify-content: start;
-            align-items: start;
+            justify-content: flex-start;
+            align-items: flex-start;
             padding: 25px;
             &-img{
                 height: 65px;
