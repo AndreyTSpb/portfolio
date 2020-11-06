@@ -490,18 +490,18 @@
                     <form>
                         <div class="contact__form-input">
                             <fieldset>
-                                <legend>Ваше имя</legend>
-                                <input type="text" name="name">
+                                <label for="name">Ваше имя</label>
+                                <input id="name" type="text" name="name">
                             </fieldset>
                             <fieldset>
-                                <legend>Ваша почта</legend>
-                                <input type="email" name="email">
+                                <label for="email">Ваша почта</label>
+                                <input id="email" type="email" name="email">
                             </fieldset>
                         </div>
-                        <fieldset>
-                            <legend>Ваше сообщение</legend>
-                            <textarea name="text" id="" rows="5"></textarea>
-                        </fieldset>
+                        <div class="contact__form-textarea">
+                            <label for="text">Ваше сообщение</label>
+                            <textarea id="text" name="text" id="" rows="5"></textarea>
+                        </div>
                         <button class="btn btn__yellow" type="submit">Отправить сообщение</button>
                     </form>
                 </input>

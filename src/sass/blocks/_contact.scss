@@ -46,9 +46,9 @@
         }
         fieldset{
             margin-top: 10px;
-            border: 1px solid #000000;
+            border: 0;
         }
-        legend{
+        label{
             max-width: 130px;
             //height: 18px;
             margin-left: 15px;
@@ -58,18 +58,42 @@
             padding-left: 14px;
             padding-right: 14px;
         }
-        input,textarea{
-            border: 0px;
+        &-textarea{
+            margin-top: 25px;
+            label{
+                position: absolute;
+                background-color: #ffffff;
+                left:0;
+                top:-8px;
+                max-width: 155px;
+                z-index: 2;
+            }
+            textarea{
+                width: 100%;
+                resize: none;
+                border: 1px solid #000000;
+                padding: 15px 10px;
+            }
         }
-        textarea{
-            width: 100%;
-        }
+        
         &-input{
+            margin-top: 25px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             column-gap: 25px;
-            legend{
+            label{
+                position: absolute;
+                background-color: #ffffff;
+                left:0;
+                top:-8px;
                 max-width: 95px;
+                z-index: 2;
+            }
+            input{
+                position: relative;
+                border: 1px solid #000000;
+                width: 100%;
+                padding: 15px 10px;
             }
         }
         button{
