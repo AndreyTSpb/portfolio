@@ -105,146 +105,156 @@
 
     <!-- ABOUT ME -->
     <section class="about_me" id="about_me">
-        <div class="about_me__wrapper">
-            <div class="about_me__img">
-                <img src="/img/photo.jpg" alt="" srcset="">
-            </div>
-            <div class="about_me__text">
-                <div class="title title_fz16 header__subtitle">
-                    Про меня
+        <div class="container">
+            <div class="about_me__wrapper">
+                <div class="about_me__img">
+                    <img src="/img/photo.jpg" alt="" srcset="">
                 </div>
-                <h2 class="title title_fz36 header__title">Меня зовут Свистом</h2>
-                <div class="about_me__divider"></div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi provident rerum minus qui libero delectus nihil esse quidem repellat, unde ipsam non deserunt a nam possimus veniam nemo aut?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores veniam quos labore quasi? Quis aliquid veniam nostrum optio neque quos vero reiciendis! Cum vero nostrum inventore ut atque doloremque aliquam!
-                </p>
-                <div class="about_me__grid">
-                    <div class="grid-items">
-                        <img src="/icons/about_me/web_development.svg" alt="" srcset="">
-                        <div>
-                            <h5>Web-разработка</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ex tempore nemo fugit illo impedit dignissimos, nulla ab placeat sint </p>
-                        </div>
+                <div class="about_me__text">
+                    <div class="title title_fz16 header__subtitle">
+                        Про меня
                     </div>
-                    <div class="grid-items">
-                        <img src="/icons/about_me/mobile_dev.svg" alt="" srcset="">
-                        <div>
-                            <h5>Разработка приложений</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi ipsam tempore eaque! Quibusdam doloribus ipsum eius ad fugit eligendi sequi aspernatur optio?</p>
+                    <h2 class="title title_fz36 header__title">Меня зовут Свистом</h2>
+                    <div class="about_me__divider"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi provident rerum minus qui libero delectus nihil esse quidem repellat, unde ipsam non deserunt a nam possimus veniam nemo aut?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores veniam quos labore quasi? Quis aliquid veniam nostrum optio neque quos vero reiciendis! Cum vero nostrum inventore ut atque doloremque aliquam!
+                    </p>
+                    <div class="about_me__grid">
+                        <div class="grid-items">
+                            <div class="grid-items__img">
+                                <img src="/icons/about_me/web_development.svg" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h5>Web-разработка</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis ex tempore nemo fugit illo impedit dignissimos, nulla ab placeat sint </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grid-items">
-                        <img src="/icons/about_me/design.svg" alt="" srcset="">
-                        <div>
-                            <h5>UI/UX Design</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus esse non dicta vitae maxime harum quam, sunt adipisci ea. Cumque sapiente recusandae eaque quidem.<p>
+                        <div class="grid-items">
+                            <div class="grid-items__img">
+                                <img src="/icons/about_me/mobile_dev.svg" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h5>Разработка приложений</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi ipsam tempore eaque! Quibusdam doloribus ipsum eius ad fugit eligendi sequi aspernatur optio?</p>
+                            </div>
+                        </div>
+                        <div class="grid-items">
+                            <div class="grid-items__img">
+                                <img src="/icons/about_me/design.svg" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h5>UI/UX Design</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus esse non dicta vitae maxime harum quam, sunt adipisci ea. Cumque sapiente recusandae eaque quidem.<p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- RESUME -->
+<!--
     <section class="resume">
-        <h2 class="title title_fz16 resume__subtitle">
-            Опыт
-        </h2>
-        <div class="title title_fz36 resume__title">Чем я буду полезна</div>
-        <div class="my-skils__divider"></div>
-
-        <div class="resume__wrapper">
-            <div class="resume__column">
-                <h3 class="title title_fz20 resume__column-title">
-                    Образование
-                </h3>
-                <ul>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <img src="../icons/experience/university.svg" alt="" srcset="">
+        <div class="container">
+            <h2 class="title title_fz16 resume__subtitle">
+                Опыт
+            </h2>
+            <div class="title title_fz36 resume__title">Чем я буду полезна</div>
+            <div class="my-skils__divider"></div>
+            <div class="resume__wrapper">
+                <div class="resume__column">
+                    <h3 class="title title_fz20 resume__column-title">
+                        Образование
+                    </h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="../icons/experience/university.svg" alt="" srcset="">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        МГТУ им. Н. Э. Баумана
+                                    </h4>
+                                    <div class="resume__item-location">
+                                        Диплом магистра | Москва (2014-2020)
+                                    </div>
                                 </div>
-                                <h4 class="title title_fz14">
-                                    МГТУ им. Н. Э. Баумана
-                                </h4>
-                                <div class="resume__item-location">
-                                    Диплом магистра | Москва (2014-2020)
-                                </div>
-                            </div>
-                            <div class="resume__item-body">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quasi quis est magnam? Cupiditate ipsa dolores animi alias eos error non ab? Cupiditate mollitia recusandae placeat modi voluptatem! Et, alias?
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <img src="../icons/experience/courses.svg" alt="" srcset="">
-                                </div>
-                                <h4 class="title title_fz14">
-                                    Udemy
-                                </h4>
-                                <div class="resume__item-location">
-                                    Курсы по Web-разработке
+                                <div class="resume__item-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quasi quis est magnam? Cupiditate ipsa dolores animi alias eos error non ab? Cupiditate mollitia recusandae placeat modi voluptatem! Et, alias?
                                 </div>
                             </div>
-                            <div class="resume__item-body">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quasi quis est magnam? Cupiditate ipsa dolores animi alias eos error non ab? Cupiditate mollitia recusandae placeat modi voluptatem! Et, alias?
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume__column">
-                <h3 class="title title_fz20 resume__column-title">
-                    Опыт работы
-                </h3>
-                <ul>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <img src="../icons/experience/developer.svg" alt="" srcset="">
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="../icons/experience/courses.svg" alt="" srcset="">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        Udemy
+                                    </h4>
+                                    <div class="resume__item-location">
+                                        Курсы по Web-разработке
+                                    </div>
                                 </div>
-                                <h4 class="title title_fz14">
-                                    Front-End Developer
-                                </h4>
-                                <div class="resume__item-location">
-                                    EPAM | Москва (2018-2019)
+                                <div class="resume__item-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quasi quis est magnam? Cupiditate ipsa dolores animi alias eos error non ab? Cupiditate mollitia recusandae placeat modi voluptatem! Et, alias?
                                 </div>
                             </div>
-                            <div class="resume__item-body">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quasi quis est magnam? Cupiditate ipsa dolores animi alias eos error non ab? Cupiditate mollitia recusandae placeat modi voluptatem! Et, alias?
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="resume__item">
-                            <div class="resume__item-head">
-                                <div class="resume__item-icon">
-                                    <img src="../icons/experience/designer.svg" alt="" srcset="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume__column">
+                    <h3 class="title title_fz20 resume__column-title">
+                        Опыт работы
+                    </h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="../icons/experience/developer.svg" alt="" srcset="">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        Front-End Developer
+                                    </h4>
+                                    <div class="resume__item-location">
+                                        EPAM | Москва (2018-2019)
+                                    </div>
                                 </div>
-                                <h4 class="title title_fz14">
-                                    UI/UX Designer
-                                </h4>
-                                <div class="resume__item-location">
-                                    Squad Team | Москва (2018) 
+                                <div class="resume__item-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quasi quis est magnam? Cupiditate ipsa dolores animi alias eos error non ab? Cupiditate mollitia recusandae placeat modi voluptatem! Et, alias?
                                 </div>
                             </div>
-                            <div class="resume__item-body">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quasi quis est magnam? Cupiditate ipsa dolores animi alias eos error non ab? Cupiditate mollitia recusandae placeat modi voluptatem! Et, alias?
+                        </li>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="../icons/experience/designer.svg" alt="" srcset="">
+                                    </div>
+                                    <h4 class="title title_fz14">
+                                        UI/UX Designer
+                                    </h4>
+                                    <div class="resume__item-location">
+                                        Squad Team | Москва (2018) 
+                                    </div>
+                                </div>
+                                <div class="resume__item-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quasi quis est magnam? Cupiditate ipsa dolores animi alias eos error non ab? Cupiditate mollitia recusandae placeat modi voluptatem! Et, alias?
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-
+-->
     <!-- SKILS -->
+<!--
     <section class="my-skils" id="my-skils">
         <div class="conainer">
             <h2 class="title title_fz16 my-skils__subtitle">
@@ -366,8 +376,9 @@
             </div>
         </div>
     </section>
-    
+--> 
     <!-- WORKS -->
+<!--
     <section class="my-works" id="my-works">
         <div class="container">
             <h2 class="title title_fz16 my-works__subtitle">
@@ -397,8 +408,9 @@
             </div>
         </div>
     </section>
-
+-->
     <!-- PRICE -->
+<!--
     <section class="price" id="price">
         <div class="container">
             <h2 class="title title_fz16 price__subtitle">
@@ -463,57 +475,61 @@
             </div>
         </div>
     </section>
-
+-->
     <!-- CONTACT WITH ME-->
+<!--
     <section class="contact" id="contact">
-        <div class="contact__wrapper">
-            <div class="contact__img">
-                <img src="/img/photo.jpg" alt="" srcset="">
-            </div>
-            <div class="contact__text">
-                <div class="title title_fz16 header__subtitle">
-                    Контакты
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__img">
+                    <img src="/img/photo.jpg" alt="" srcset="">
                 </div>
-                <h2 class="title title_fz36 header__title">Свяжитесь со мной</h2>
-                <div class="contact__divider"></div>
-                <div class="contact__social">
-                    <span>Любым удобным для вас способом:</span>
-                    <ul>
-                        <li><a a="#" class="social__link"> <img src="icons/social/facebook.svg" alt="" srcset=""> </a></li>
-                        <li><a a="#" class="social__link"> <img src="icons/social/github.svg" alt="" srcset=""> </a></li>
-                        <li><a a="#" class="social__link"> <img src="icons/social/instagram.svg" alt="" srcset=""> </a></li>
-                        <li><a a="#" class="social__link"> <img src="icons/social/telegram.svg" alt="" srcset=""> </a></li>
-                    </ul>
-                </div>
-                <div class="contact__form">
-                    <h2 class="contact__form-header">Или оставьте ваши данные и я сама вам напишу:</h2>
-                    <form>
-                        <div class="contact__form-input">
-                            <fieldset>
-                                <label for="name">Ваше имя</label>
-                                <input id="name" type="text" name="name">
-                            </fieldset>
-                            <fieldset>
-                                <label for="email">Ваша почта</label>
-                                <input id="email" type="email" name="email">
-                            </fieldset>
-                        </div>
-                        <div class="contact__form-textarea">
-                            <label for="text">Ваше сообщение</label>
-                            <textarea id="text" name="text" id="" rows="5"></textarea>
-                        </div>
-                        <div class="contact__form-trigers">
-                            <button class="btn btn__yellow" type="submit">Отправить сообщение</button>
-                            <div class="contact__form-trigers-policy">
-                                <input required type="checkbox" name="policy">
-                                <span>Я согласен с <a href="/policy">политикой конфеденциальности</a></span>
+                <div class="contact__text">
+                    <div class="title title_fz16 header__subtitle">
+                        Контакты
+                    </div>
+                    <h2 class="title title_fz36 header__title">Свяжитесь со мной</h2>
+                    <div class="contact__divider"></div>
+                    <div class="contact__social">
+                        <span>Любым удобным для вас способом:</span>
+                        <ul>
+                            <li><a a="#" class="social__link"> <img src="icons/social/facebook.svg" alt="" srcset=""> </a></li>
+                            <li><a a="#" class="social__link"> <img src="icons/social/github.svg" alt="" srcset=""> </a></li>
+                            <li><a a="#" class="social__link"> <img src="icons/social/instagram.svg" alt="" srcset=""> </a></li>
+                            <li><a a="#" class="social__link"> <img src="icons/social/telegram.svg" alt="" srcset=""> </a></li>
+                        </ul>
+                    </div>
+                    <div class="contact__form">
+                        <h2 class="contact__form-header">Или оставьте ваши данные и я сама вам напишу:</h2>
+                        <form>
+                            <div class="contact__form-input">
+                                <fieldset>
+                                    <label for="name">Ваше имя</label>
+                                    <input id="name" type="text" name="name">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="email">Ваша почта</label>
+                                    <input id="email" type="email" name="email">
+                                </fieldset>
                             </div>
-                        </div>
-                    </form>
-                </input>
+                            <div class="contact__form-textarea">
+                                <label for="text">Ваше сообщение</label>
+                                <textarea id="text" name="text" id="" rows="5"></textarea>
+                            </div>
+                            <div class="contact__form-trigers">
+                                <button class="btn btn__yellow" type="submit">Отправить сообщение</button>
+                                <div class="contact__form-trigers-policy">
+                                    <input required type="checkbox" name="policy">
+                                    <span>Я согласен с <a href="/policy">политикой конфеденциальности</a></span>
+                                </div>
+                            </div>
+                        </form>
+                    </input>
+                </div>
             </div>
         </div>
     </section>
+-->
 
     <script src="js/script.js"></script>
 </body>

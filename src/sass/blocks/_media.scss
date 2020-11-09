@@ -1,0 +1,105 @@
+@media (max-width:1439px){
+    
+}
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    aside.social{
+        display: none;
+    }
+    .about_me{
+        &__text{
+            padding-left: 30px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+    .header{
+        padding-left: 0px;
+    }
+    .about_me{
+        &__text{
+            padding-left: 5px;
+        }
+        // &__img {
+        //     width: 100%;
+        //     height: 300px;
+        // }
+    }
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+    .title{
+        &_fz48{
+            font-size: 26px;
+        }
+    }
+    .header{
+        &__title{
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    .about_me{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .hamburger{
+        right: 20px;
+    }
+    .menu{
+        &__block{
+            width: 270px;
+            ul>li>a{
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+    .title{
+        &_fz36{
+            font-size: 24px;
+        }
+    }
+    .header{
+        &__title{
+            line-height: 36px;
+            width: 300px;
+        }
+    }
+    .header{
+        background: url('../img/header_bg.jpg') no-repeat 60%/cover ;
+        &__title{
+            margin-left: 10px;
+        }
+        &__btn{
+            width: 300px;
+            margin-left: 10px;
+            margin-top: 35px;
+        }
+    }
+    .about_me{
+
+        &__grid{
+            grid-template-columns: 260px;
+        }
+    }
+    
+}
