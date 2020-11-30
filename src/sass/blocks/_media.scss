@@ -55,7 +55,51 @@
             height: 300px;
         }
     }
+    .resume{
+      padding-left: 25px;
+      padding-right: 25px;  
+    }
+    .resume__wrapper{
+        grid-template-columns: 1fr;
+        padding-right: 0;
+    }
+    .my-works__grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 270px;
+    }
+    .my-works__grid .grid-items:nth-child(4){
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .my-works__grid .grid-items:nth-child(6){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .price{
+        padding-left: 0;
+    }
+    .price__grid{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .contact__wrapper{
+        width: 100%;
+    }
+    .contact__img {
+        display: none;
+    }
+    .contact__text {
+        padding-left: 0;
+    }
+    .contact__text .btn{
+        padding: 10px 5px;
+    }
 }
+
 @media (max-width: 576px){
     .container{
         max-width: 100%;
@@ -76,18 +120,19 @@
     .title{
         &_fz36{
             font-size: 24px;
+            word-wrap: normal;
         }
     }
     .header{
         &__title{
-            line-height: 36px;
-            width: 300px;
+            line-height: 34px;
+            width: 100%;
         }
     }
     .header{
         background: url('../img/header_bg.jpg') no-repeat 60%/cover ;
         &__title{
-            margin-left: 10px;
+            margin-left: 0px;
         }
         &__btn{
             width: 300px;
@@ -101,5 +146,40 @@
             grid-template-columns: 260px;
         }
     }
-    
+    .my-works__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 270px;
+    }
+    .my-works__grid .grid-items:nth-child(4){
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .my-works__grid .grid-items:nth-child(6){
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .contact__form-input{
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    .contact__form-trigers{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact__form-trigers-policy{
+        margin: 0 auto;
+        margin-bottom: 25px;
+        width: 70%;
+        text-align: center;
+        display: flex;
+        align-items:center;
+    }
+    .contact__form-trigers-policy span{
+        font-size: 16px;
+    }
 }

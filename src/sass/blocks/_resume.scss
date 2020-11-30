@@ -20,10 +20,11 @@
         margin-top: 50px;
         padding-right: 65px;
         display: grid;
-        grid-template-columns: repeat(2, 425px);
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         column-gap: 120px;
         text-align: left;
+        
     }
     &__column{
         //max-width: 500px;
